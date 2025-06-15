@@ -1,0 +1,97 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgb(186, 243, 234), rgb(78, 34, 120));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box{
+    height: 90%;
+    max-width: 300px;
+    background-color: rgb(205, 205, 187);
+    border-radius: 10px;
+    padding: 1px 3px;
+    margin-inline: 20px;
+}
+.form-box header{
+    text-align: center;
+    color:rgb(81, 81, 229);
+    margin-top: 20px;
+}
+.form-box form{
+    margin-block: 30px;
+}
+input{
+    width: 93%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(168, 172, 184);
+    font-size: 15px;
+    margin: 12px 12px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 15px;
+    color:rgb(74, 77, 83)
+}
+input[type="button"]{
+    margin-block: 20px;
+    color:aliceblue;
+    background-color: rgb(81, 81, 229);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+input[type="button"]:hover{
+    background-color: rgb(40, 40, 194);
+}
+input [type="text"]{
+    display: none;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+.links a i{
+    padding: 0px 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.signup{
+    text-align: center;
+    margin-block: 12px;
+}
+.signup a{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(40, 40, 194);
+}
+.signup a:hover{
+    color: rgb(74, 74, 250);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* CSS to achieve responsiveness */
+
+@media screen and (max-width: 700px){
+    .form-box{
+        width: 100%;
+    }
+}
